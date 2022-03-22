@@ -1,6 +1,5 @@
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
 
 /**
  * Program : FourThought.java
@@ -35,6 +34,8 @@ public class FourThought {
                 for (int k = 0; k < operators.length; k++) {
                 String expression = "4 " + operators[i] + " 4 " + operators[j] + " 4 " + operators[k];
                 int value = evaluateExpression(expression);
+                    //now we need to add our string expression, and value value to our hashmap.
+                    generator.put(expression, value);
                 }
             }
         }
@@ -42,8 +43,9 @@ public class FourThought {
         return (HashMap<String, Integer>) generator; //have to explicitly cast it as a hashmap for the return statement
     }
     public static int evaluateExpression(String expression){
+        
         int val = 0;
-
+        
         return val;
     }
 }
