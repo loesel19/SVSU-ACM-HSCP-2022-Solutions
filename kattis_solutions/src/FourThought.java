@@ -49,11 +49,12 @@ public class FourThought {
             if (expr.containsValue(val)) {
                 /* now we have to iterate over the hashmap using a for each, and when we find an entry with our
                     desired value we can print it off using printf. */
-                boolean found = false;
+                //boolean found = false;
                 for (Map.Entry<String, Integer> entry : expr.entrySet()) {
-                    if (Objects.equals(entry.getValue(), val) && !found) {
+                    if (Objects.equals(entry.getValue(), val)) {
                         System.out.printf("%s = %d%n", entry.getKey(), val);
-                        found = true;
+                        //found = true;
+                        break;
                     }
                 }
             }else{
