@@ -18,7 +18,7 @@ public class HotHike {
     public static int[] findLowestTemps(int[] temps){
         int lowestIndex = 0; //the index of the start of the trip with the lowest avg
         int lowestMax = 4137467; //the max value of the lowest two temp days, starts at max val for integer
-        for(int i = 0; i < temps.length - 3; i++){
+        for(int i = 0; i < temps.length - 2; i++){
             if (temps[i] < lowestMax && temps[i+2] < lowestMax){
                 //set the lowest index
                 lowestIndex = i;
